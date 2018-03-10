@@ -16,6 +16,6 @@
       <li class="<%= 'active' if current_page?(micropostings_user_path(@user)) %>"><%= link_to micropostings_user_path(@user) do %>Micropostings <span class="badge"><%= @count_micropostings %></span><% end %></li>
       <li class="<%= 'active' if current_page?(microposters_user_path(@user)) %>"><%= link_to microposters_user_path(@user) do %>Microposters <span class="badge"><%= @count_microposters %></span><% end %></li>
     </ul>
-    <%= render 'microposts/microposts', microposts: @microposts %>
+    <%= render 'users', users: @microposters %>
   </div>
 </div>
